@@ -50,14 +50,37 @@
               </div>
             </div>
           </div>
+          <div class="userInfo">
+            <div class="userInfo-name">
+              <span class="userInfo-name__text">이름</span>
+              <input type="text" name="userName" value="" placeholder="이름을 입력해주세요.">
+            </div>
+            <div class="userInfo-privateNumber">
+              <span class="userInfo-privateNumber__text">주민번호</span>
+              <div class="userInfo-privateNumber__input">
+                <input type="number" name="privateNumber1" value="">
+                <span>-</span>
+                <input type="password" name="privateNumber2" value="">
+              </div>
+            </div>
+            <div class="userInfo-gender">
+                <span class="userInfo-gender__text">성별</span>
+                <div class="userInfo-gender__radio">
+                  <input type="radio" name="gender" value="남자" checked><span>남자</span>
+                  <input type="radio" name="gender" value="여자"><span>여자</span>
+                </div>
+            </div>
+            <div class="userInfo-email">
+                <span class="userInfo-email__text">이메일</span>
+                <input type="email" name="userEmail" placeholder="abc@abc..." value="">
+            </div>
+          </div>
           <div class="bookingForm__form__row-button">
               <button type="submit" name="button">항공권검색</button>
           </div>
         </form>
       </div>
-      <div class="personalInfo">
 
-      </div>
     </div>
   </body>
 </html>
