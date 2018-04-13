@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="upper">
+        <i id="plane" class="fas fa-plane"></i>
+        <span>skyScanner</span>
+      </div>
+      <div class="bookingForm">
+        <form class="bookingForm__form" action="index.html" method="post">
+          <div class="bookingForm__form__row">
+            <div class="bookingForm__form__row__column">
+              <input type="radio" name="way" checked value="roundTrip"><span class="bookingForm__form__row__column__text">왕복</span>
+              <input type="radio" name="way" value="oneWayTrip"><span class="bookingForm__form__row__column__text">편도</span>
+              <input type="radio" name="way" value="multiSegment"><span class="bookingForm__form__row__column__text">다구간</span>
+            </div>
+            <div class="bookingForm__form__row__column">
+              <a href="#">지도로 검색하기</a>
+            </div>
+          </div>
+          <div class="bookingForm__form__row">
+              <input type="text" name="from" class="bookingForm__form__row__input" placeholder="출발지를 입력해주십시오.">
+              <i id="arrow" class="fas fa-arrows-alt-h"></i>
+              <input type="text" name="to" class="bookingForm__form__row__input" placeholder="도착지를 입력해주십시오.">
+          </div>
+          <div class="bookingForm__selector">
+            <div class="bookingForm__form__row">
+              <div class="bookingForm__form__row__column_1">
+                <span>가는날</span>
+                <input type="date" name="dateToGo" value="">
+              </div>
+              <div class="bookingForm__form__row__column_1">
+                <span>오는날</span>
+                <input type="date" name="dateToCome" value="">
+              </div>
+              <div class="bookingForm__form__row__column_1">
+                <span>좌석 등급</span>
+                <select class="" name="seatGrade">
+                  <option value="A">A</option>
+                  <option value="B">B</option>
+                  <option value="C">C</option>
+                  <option value="D">D</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="bookingForm__form__row-button">
+              <button type="submit" name="button">항공권검색</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
