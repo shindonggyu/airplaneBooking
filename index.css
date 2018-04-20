@@ -30,6 +30,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   width: 700px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .bookingForm__form__row {
   width: 100%;
